@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A42E7B4C210FDFA0003D1E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E7B4B210FDFA0003D1E26 /* AppDelegate.swift */; };
+		A42E7B4E210FDFA0003D1E26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E7B4D210FDFA0003D1E26 /* ViewController.swift */; };
+		A42E7B50210FDFA0003D1E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42E7B4F210FDFA0003D1E26 /* Assets.xcassets */; };
+		A42E7B53210FDFA0003D1E26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42E7B51210FDFA0003D1E26 /* Main.storyboard */; };
+		A49FD2352114B17700D3702E /* zoom-out-symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = A49FD2342114B17700D3702E /* zoom-out-symbol.png */; };
+		A49FD2372114B63600D3702E /* duct.IGS in Resources */ = {isa = PBXBuildFile; fileRef = A49FD2362114B63500D3702E /* duct.IGS */; };
+		A4B672C82117CFBD008E7DE7 /* UpdatedWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B672C72117CFBD008E7DE7 /* UpdatedWindowController.swift */; };
+		A4DB7F18210FE18A0070E725 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB7F16210FE18A0070E725 /* ContainerViewController.swift */; };
+		A4DB7F19210FE18A0070E725 /* ContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4DB7F17210FE18A0070E725 /* ContainerViewController.xib */; };
+		A4DB7F1D210FE6D40070E725 /* OCC.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4DB7F1C210FE6D40070E725 /* OCC.mm */; };
+		A4DB7F1F210FE72E0070E725 /* 7.2.0 in Resources */ = {isa = PBXBuildFile; fileRef = A4DB7F1E210FE72E0070E725 /* 7.2.0 */; };
+		A4DB7F5A210FE76F0070E725 /* libTKXMesh.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F22210FE76B0070E725 /* libTKXMesh.7.2.0.dylib */; };
+		A4DB7F5B210FE76F0070E725 /* libTKFeat.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F23210FE76B0070E725 /* libTKFeat.7.2.0.dylib */; };
+		A4DB7F5C210FE76F0070E725 /* libTKBool.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F24210FE76B0070E725 /* libTKBool.7.2.0.dylib */; };
+		A4DB7F5D210FE76F0070E725 /* libTKCAF.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F25210FE76B0070E725 /* libTKCAF.7.2.0.dylib */; };
+		A4DB7F5E210FE76F0070E725 /* libTKG3d.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F26210FE76B0070E725 /* libTKG3d.7.2.0.dylib */; };
+		A4DB7F5F210FE76F0070E725 /* libTKBinTObj.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F27210FE76B0070E725 /* libTKBinTObj.7.2.0.dylib */; };
+		A4DB7F60210FE76F0070E725 /* libTKOpenGl.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F28210FE76B0070E725 /* libTKOpenGl.7.2.0.dylib */; };
+		A4DB7F61210FE76F0070E725 /* libTKBinXCAF.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F29210FE76B0070E725 /* libTKBinXCAF.7.2.0.dylib */; };
+		A4DB7F62210FE76F0070E725 /* libTKSTEPAttr.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F2A210FE76C0070E725 /* libTKSTEPAttr.7.2.0.dylib */; };
+		A4DB7F63210FE76F0070E725 /* libTKCDF.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F2B210FE76C0070E725 /* libTKCDF.7.2.0.dylib */; };
+		A4DB7F64210FE76F0070E725 /* libTKTObj.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F2C210FE76C0070E725 /* libTKTObj.7.2.0.dylib */; };
+		A4DB7F65210FE76F0070E725 /* libTKVCAF.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F2D210FE76C0070E725 /* libTKVCAF.7.2.0.dylib */; };
+		A4DB7F66210FE76F0070E725 /* libTKQADraw.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F2E210FE76C0070E725 /* libTKQADraw.7.2.0.dylib */; };
+		A4DB7F67210FE76F0070E725 /* libTKLCAF.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F2F210FE76C0070E725 /* libTKLCAF.7.2.0.dylib */; };
+		A4DB7F68210FE76F0070E725 /* libTKG2d.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F30210FE76C0070E725 /* libTKG2d.7.2.0.dylib */; };
+		A4DB7F69210FE76F0070E725 /* libTKGeomAlgo.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F31210FE76C0070E725 /* libTKGeomAlgo.7.2.0.dylib */; };
+		A4DB7F6A210FE76F0070E725 /* libTKOffset.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F32210FE76C0070E725 /* libTKOffset.7.2.0.dylib */; };
+		A4DB7F6B210FE76F0070E725 /* libTKVRML.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F33210FE76C0070E725 /* libTKVRML.7.2.0.dylib */; };
+		A4DB7F6C210FE76F0070E725 /* libTKXmlL.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F34210FE76C0070E725 /* libTKXmlL.7.2.0.dylib */; };
+		A4DB7F6D210FE76F0070E725 /* libTKViewerTest.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F35210FE76C0070E725 /* libTKViewerTest.7.2.0.dylib */; };
+		A4DB7F6E210FE76F0070E725 /* libTKSTL.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F36210FE76C0070E725 /* libTKSTL.7.2.0.dylib */; };
+		A4DB7F6F210FE76F0070E725 /* libTKMesh.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F37210FE76C0070E725 /* libTKMesh.7.2.0.dylib */; };
+		A4DB7F70210FE76F0070E725 /* libTKTObjDRAW.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F38210FE76C0070E725 /* libTKTObjDRAW.7.2.0.dylib */; };
+		A4DB7F71210FE76F0070E725 /* libTKXmlXCAF.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F39210FE76D0070E725 /* libTKXmlXCAF.7.2.0.dylib */; };
+		A4DB7F72210FE76F0070E725 /* libTKIGES.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F3A210FE76D0070E725 /* libTKIGES.7.2.0.dylib */; };
+		A4DB7F73210FE76F0070E725 /* libTKXDESTEP.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F3B210FE76D0070E725 /* libTKXDESTEP.7.2.0.dylib */; };
+		A4DB7F74210FE76F0070E725 /* libTKSTEP209.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F3C210FE76D0070E725 /* libTKSTEP209.7.2.0.dylib */; };
+		A4DB7F75210FE76F0070E725 /* libTKXDEDRAW.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F3D210FE76D0070E725 /* libTKXDEDRAW.7.2.0.dylib */; };
+		A4DB7F76210FE76F0070E725 /* libTKPrim.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F3E210FE76D0070E725 /* libTKPrim.7.2.0.dylib */; };
+		A4DB7F77210FE76F0070E725 /* libTKBin.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F3F210FE76D0070E725 /* libTKBin.7.2.0.dylib */; };
+		A4DB7F78210FE76F0070E725 /* libTKService.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F40210FE76D0070E725 /* libTKService.7.2.0.dylib */; };
+		A4DB7F79210FE76F0070E725 /* libTKShHealing.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F41210FE76D0070E725 /* libTKShHealing.7.2.0.dylib */; };
+		A4DB7F7A210FE76F0070E725 /* libTKMeshVS.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F42210FE76D0070E725 /* libTKMeshVS.7.2.0.dylib */; };
+		A4DB7F7B210FE76F0070E725 /* libTKStdL.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F43210FE76D0070E725 /* libTKStdL.7.2.0.dylib */; };
+		A4DB7F7C210FE76F0070E725 /* libTKXDEIGES.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F44210FE76D0070E725 /* libTKXDEIGES.7.2.0.dylib */; };
+		A4DB7F7D210FE76F0070E725 /* libTKTopTest.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F45210FE76D0070E725 /* libTKTopTest.7.2.0.dylib */; };
+		A4DB7F7E210FE76F0070E725 /* libTKSTEPBase.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F46210FE76D0070E725 /* libTKSTEPBase.7.2.0.dylib */; };
+		A4DB7F7F210FE76F0070E725 /* libTKMath.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F47210FE76D0070E725 /* libTKMath.7.2.0.dylib */; };
+		A4DB7F80210FE76F0070E725 /* libTKXSDRAW.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F48210FE76E0070E725 /* libTKXSDRAW.7.2.0.dylib */; };
+		A4DB7F81210FE76F0070E725 /* libTKTopAlgo.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F49210FE76E0070E725 /* libTKTopAlgo.7.2.0.dylib */; };
+		A4DB7F82210FE76F0070E725 /* libTKDCAF.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F4A210FE76E0070E725 /* libTKDCAF.7.2.0.dylib */; };
+		A4DB7F83210FE76F0070E725 /* libTKXSBase.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F4B210FE76E0070E725 /* libTKXSBase.7.2.0.dylib */; };
+		A4DB7F84210FE76F0070E725 /* libTKStd.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F4C210FE76E0070E725 /* libTKStd.7.2.0.dylib */; };
+		A4DB7F85210FE76F0070E725 /* libTKHLR.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F4D210FE76E0070E725 /* libTKHLR.7.2.0.dylib */; };
+		A4DB7F86210FE76F0070E725 /* libTKSTEP.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F4E210FE76E0070E725 /* libTKSTEP.7.2.0.dylib */; };
+		A4DB7F87210FE76F0070E725 /* libTKFillet.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F4F210FE76E0070E725 /* libTKFillet.7.2.0.dylib */; };
+		A4DB7F88210FE76F0070E725 /* libTKV3d.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F50210FE76E0070E725 /* libTKV3d.7.2.0.dylib */; };
+		A4DB7F89210FE76F0070E725 /* libTKXCAF.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F51210FE76E0070E725 /* libTKXCAF.7.2.0.dylib */; };
+		A4DB7F8A210FE76F0070E725 /* libTKXml.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F52210FE76E0070E725 /* libTKXml.7.2.0.dylib */; };
+		A4DB7F8B210FE76F0070E725 /* libTKBO.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F53210FE76E0070E725 /* libTKBO.7.2.0.dylib */; };
+		A4DB7F8C210FE76F0070E725 /* libTKBinL.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F54210FE76E0070E725 /* libTKBinL.7.2.0.dylib */; };
+		A4DB7F8D210FE76F0070E725 /* libTKernel.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F55210FE76E0070E725 /* libTKernel.7.2.0.dylib */; };
+		A4DB7F8E210FE76F0070E725 /* libTKBRep.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F56210FE76F0070E725 /* libTKBRep.7.2.0.dylib */; };
+		A4DB7F8F210FE76F0070E725 /* libTKDraw.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F57210FE76F0070E725 /* libTKDraw.7.2.0.dylib */; };
+		A4DB7F90210FE76F0070E725 /* libTKXmlTObj.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F58210FE76F0070E725 /* libTKXmlTObj.7.2.0.dylib */; };
+		A4DB7F91210FE76F0070E725 /* libTKGeomBase.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F59210FE76F0070E725 /* libTKGeomBase.7.2.0.dylib */; };
+		A4DB7F9321127F580070E725 /* importantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB7F9221127F580070E725 /* importantData.swift */; };
+		A4DB7F952114A1AA0070E725 /* NSViewGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB7F942114A1AA0070E725 /* NSViewGradient.swift */; };
+		A4DB7F972114A7040070E725 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB7F962114A7040070E725 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A42E7B48210FDFA0003D1E26 /* AppTest1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTest1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42E7B4B210FDFA0003D1E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A42E7B4D210FDFA0003D1E26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A42E7B4F210FDFA0003D1E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A42E7B52210FDFA0003D1E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A42E7B54210FDFA0003D1E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42E7B55210FDFA0003D1E26 /* AppTest1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppTest1.entitlements; sourceTree = "<group>"; };
+		A49FD2342114B17700D3702E /* zoom-out-symbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zoom-out-symbol.png"; sourceTree = "<group>"; };
+		A49FD2362114B63500D3702E /* duct.IGS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = duct.IGS; sourceTree = "<group>"; };
+		A49FD2382114C05F00D3702E /* ductIGSFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ductIGSFile.h; sourceTree = "<group>"; };
+		A4B672C62114C590008E7DE7 /* duct.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = duct.txt; sourceTree = "<group>"; };
+		A4B672C72117CFBD008E7DE7 /* UpdatedWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatedWindowController.swift; sourceTree = "<group>"; };
+		A4DB7F16210FE18A0070E725 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		A4DB7F17210FE18A0070E725 /* ContainerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContainerViewController.xib; sourceTree = "<group>"; };
+		A4DB7F1A210FE6C30070E725 /* OCC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCC.h; sourceTree = "<group>"; };
+		A4DB7F1B210FE6D30070E725 /* AppTest1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppTest1-Bridging-Header.h"; sourceTree = "<group>"; };
+		A4DB7F1C210FE6D40070E725 /* OCC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCC.mm; sourceTree = "<group>"; };
+		A4DB7F1E210FE72E0070E725 /* 7.2.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 7.2.0; sourceTree = "<group>"; };
+		A4DB7F20210FE74E0070E725 /* OpenCascade_Include.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCascade_Include.h; sourceTree = "<group>"; };
+		A4DB7F22210FE76B0070E725 /* libTKXMesh.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKXMesh.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKXMesh.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F23210FE76B0070E725 /* libTKFeat.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKFeat.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKFeat.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F24210FE76B0070E725 /* libTKBool.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKBool.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKBool.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F25210FE76B0070E725 /* libTKCAF.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKCAF.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKCAF.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F26210FE76B0070E725 /* libTKG3d.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKG3d.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKG3d.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F27210FE76B0070E725 /* libTKBinTObj.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKBinTObj.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKBinTObj.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F28210FE76B0070E725 /* libTKOpenGl.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKOpenGl.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKOpenGl.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F29210FE76B0070E725 /* libTKBinXCAF.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKBinXCAF.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKBinXCAF.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F2A210FE76C0070E725 /* libTKSTEPAttr.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKSTEPAttr.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKSTEPAttr.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F2B210FE76C0070E725 /* libTKCDF.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKCDF.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKCDF.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F2C210FE76C0070E725 /* libTKTObj.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKTObj.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKTObj.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F2D210FE76C0070E725 /* libTKVCAF.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKVCAF.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKVCAF.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F2E210FE76C0070E725 /* libTKQADraw.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKQADraw.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKQADraw.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F2F210FE76C0070E725 /* libTKLCAF.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKLCAF.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKLCAF.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F30210FE76C0070E725 /* libTKG2d.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKG2d.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKG2d.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F31210FE76C0070E725 /* libTKGeomAlgo.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKGeomAlgo.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKGeomAlgo.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F32210FE76C0070E725 /* libTKOffset.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKOffset.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKOffset.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F33210FE76C0070E725 /* libTKVRML.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKVRML.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKVRML.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F34210FE76C0070E725 /* libTKXmlL.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKXmlL.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKXmlL.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F35210FE76C0070E725 /* libTKViewerTest.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKViewerTest.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKViewerTest.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F36210FE76C0070E725 /* libTKSTL.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKSTL.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKSTL.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F37210FE76C0070E725 /* libTKMesh.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKMesh.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKMesh.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F38210FE76C0070E725 /* libTKTObjDRAW.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKTObjDRAW.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKTObjDRAW.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F39210FE76D0070E725 /* libTKXmlXCAF.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKXmlXCAF.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKXmlXCAF.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F3A210FE76D0070E725 /* libTKIGES.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKIGES.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKIGES.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F3B210FE76D0070E725 /* libTKXDESTEP.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKXDESTEP.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKXDESTEP.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F3C210FE76D0070E725 /* libTKSTEP209.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKSTEP209.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKSTEP209.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F3D210FE76D0070E725 /* libTKXDEDRAW.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKXDEDRAW.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKXDEDRAW.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F3E210FE76D0070E725 /* libTKPrim.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKPrim.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKPrim.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F3F210FE76D0070E725 /* libTKBin.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKBin.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKBin.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F40210FE76D0070E725 /* libTKService.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKService.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKService.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F41210FE76D0070E725 /* libTKShHealing.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKShHealing.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKShHealing.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F42210FE76D0070E725 /* libTKMeshVS.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKMeshVS.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKMeshVS.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F43210FE76D0070E725 /* libTKStdL.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKStdL.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKStdL.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F44210FE76D0070E725 /* libTKXDEIGES.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKXDEIGES.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKXDEIGES.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F45210FE76D0070E725 /* libTKTopTest.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKTopTest.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKTopTest.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F46210FE76D0070E725 /* libTKSTEPBase.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKSTEPBase.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKSTEPBase.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F47210FE76D0070E725 /* libTKMath.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKMath.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKMath.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F48210FE76E0070E725 /* libTKXSDRAW.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKXSDRAW.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKXSDRAW.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F49210FE76E0070E725 /* libTKTopAlgo.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKTopAlgo.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKTopAlgo.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F4A210FE76E0070E725 /* libTKDCAF.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKDCAF.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKDCAF.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F4B210FE76E0070E725 /* libTKXSBase.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKXSBase.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKXSBase.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F4C210FE76E0070E725 /* libTKStd.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKStd.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKStd.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F4D210FE76E0070E725 /* libTKHLR.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKHLR.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKHLR.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F4E210FE76E0070E725 /* libTKSTEP.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKSTEP.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKSTEP.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F4F210FE76E0070E725 /* libTKFillet.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKFillet.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKFillet.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F50210FE76E0070E725 /* libTKV3d.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKV3d.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKV3d.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F51210FE76E0070E725 /* libTKXCAF.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKXCAF.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKXCAF.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F52210FE76E0070E725 /* libTKXml.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKXml.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKXml.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F53210FE76E0070E725 /* libTKBO.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKBO.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKBO.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F54210FE76E0070E725 /* libTKBinL.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKBinL.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKBinL.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F55210FE76E0070E725 /* libTKernel.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKernel.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKernel.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F56210FE76F0070E725 /* libTKBRep.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKBRep.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKBRep.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F57210FE76F0070E725 /* libTKDraw.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKDraw.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKDraw.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F58210FE76F0070E725 /* libTKXmlTObj.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKXmlTObj.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKXmlTObj.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F59210FE76F0070E725 /* libTKGeomBase.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKGeomBase.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKGeomBase.7.2.0.dylib; sourceTree = "<group>"; };
+		A4DB7F9221127F580070E725 /* importantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = importantData.swift; sourceTree = "<group>"; };
+		A4DB7F942114A1AA0070E725 /* NSViewGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSViewGradient.swift; sourceTree = "<group>"; };
+		A4DB7F962114A7040070E725 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A42E7B45210FDFA0003D1E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4DB7F5A210FE76F0070E725 /* libTKXMesh.7.2.0.dylib in Frameworks */,
+				A4DB7F5B210FE76F0070E725 /* libTKFeat.7.2.0.dylib in Frameworks */,
+				A4DB7F5C210FE76F0070E725 /* libTKBool.7.2.0.dylib in Frameworks */,
+				A4DB7F5D210FE76F0070E725 /* libTKCAF.7.2.0.dylib in Frameworks */,
+				A4DB7F5E210FE76F0070E725 /* libTKG3d.7.2.0.dylib in Frameworks */,
+				A4DB7F5F210FE76F0070E725 /* libTKBinTObj.7.2.0.dylib in Frameworks */,
+				A4DB7F60210FE76F0070E725 /* libTKOpenGl.7.2.0.dylib in Frameworks */,
+				A4DB7F61210FE76F0070E725 /* libTKBinXCAF.7.2.0.dylib in Frameworks */,
+				A4DB7F62210FE76F0070E725 /* libTKSTEPAttr.7.2.0.dylib in Frameworks */,
+				A4DB7F63210FE76F0070E725 /* libTKCDF.7.2.0.dylib in Frameworks */,
+				A4DB7F64210FE76F0070E725 /* libTKTObj.7.2.0.dylib in Frameworks */,
+				A4DB7F65210FE76F0070E725 /* libTKVCAF.7.2.0.dylib in Frameworks */,
+				A4DB7F66210FE76F0070E725 /* libTKQADraw.7.2.0.dylib in Frameworks */,
+				A4DB7F67210FE76F0070E725 /* libTKLCAF.7.2.0.dylib in Frameworks */,
+				A4DB7F68210FE76F0070E725 /* libTKG2d.7.2.0.dylib in Frameworks */,
+				A4DB7F69210FE76F0070E725 /* libTKGeomAlgo.7.2.0.dylib in Frameworks */,
+				A4DB7F6A210FE76F0070E725 /* libTKOffset.7.2.0.dylib in Frameworks */,
+				A4DB7F6B210FE76F0070E725 /* libTKVRML.7.2.0.dylib in Frameworks */,
+				A4DB7F6C210FE76F0070E725 /* libTKXmlL.7.2.0.dylib in Frameworks */,
+				A4DB7F6D210FE76F0070E725 /* libTKViewerTest.7.2.0.dylib in Frameworks */,
+				A4DB7F6E210FE76F0070E725 /* libTKSTL.7.2.0.dylib in Frameworks */,
+				A4DB7F6F210FE76F0070E725 /* libTKMesh.7.2.0.dylib in Frameworks */,
+				A4DB7F70210FE76F0070E725 /* libTKTObjDRAW.7.2.0.dylib in Frameworks */,
+				A4DB7F71210FE76F0070E725 /* libTKXmlXCAF.7.2.0.dylib in Frameworks */,
+				A4DB7F72210FE76F0070E725 /* libTKIGES.7.2.0.dylib in Frameworks */,
+				A4DB7F73210FE76F0070E725 /* libTKXDESTEP.7.2.0.dylib in Frameworks */,
+				A4DB7F74210FE76F0070E725 /* libTKSTEP209.7.2.0.dylib in Frameworks */,
+				A4DB7F75210FE76F0070E725 /* libTKXDEDRAW.7.2.0.dylib in Frameworks */,
+				A4DB7F76210FE76F0070E725 /* libTKPrim.7.2.0.dylib in Frameworks */,
+				A4DB7F77210FE76F0070E725 /* libTKBin.7.2.0.dylib in Frameworks */,
+				A4DB7F78210FE76F0070E725 /* libTKService.7.2.0.dylib in Frameworks */,
+				A4DB7F79210FE76F0070E725 /* libTKShHealing.7.2.0.dylib in Frameworks */,
+				A4DB7F7A210FE76F0070E725 /* libTKMeshVS.7.2.0.dylib in Frameworks */,
+				A4DB7F7B210FE76F0070E725 /* libTKStdL.7.2.0.dylib in Frameworks */,
+				A4DB7F7C210FE76F0070E725 /* libTKXDEIGES.7.2.0.dylib in Frameworks */,
+				A4DB7F7D210FE76F0070E725 /* libTKTopTest.7.2.0.dylib in Frameworks */,
+				A4DB7F7E210FE76F0070E725 /* libTKSTEPBase.7.2.0.dylib in Frameworks */,
+				A4DB7F7F210FE76F0070E725 /* libTKMath.7.2.0.dylib in Frameworks */,
+				A4DB7F80210FE76F0070E725 /* libTKXSDRAW.7.2.0.dylib in Frameworks */,
+				A4DB7F81210FE76F0070E725 /* libTKTopAlgo.7.2.0.dylib in Frameworks */,
+				A4DB7F82210FE76F0070E725 /* libTKDCAF.7.2.0.dylib in Frameworks */,
+				A4DB7F83210FE76F0070E725 /* libTKXSBase.7.2.0.dylib in Frameworks */,
+				A4DB7F84210FE76F0070E725 /* libTKStd.7.2.0.dylib in Frameworks */,
+				A4DB7F85210FE76F0070E725 /* libTKHLR.7.2.0.dylib in Frameworks */,
+				A4DB7F86210FE76F0070E725 /* libTKSTEP.7.2.0.dylib in Frameworks */,
+				A4DB7F87210FE76F0070E725 /* libTKFillet.7.2.0.dylib in Frameworks */,
+				A4DB7F88210FE76F0070E725 /* libTKV3d.7.2.0.dylib in Frameworks */,
+				A4DB7F89210FE76F0070E725 /* libTKXCAF.7.2.0.dylib in Frameworks */,
+				A4DB7F8A210FE76F0070E725 /* libTKXml.7.2.0.dylib in Frameworks */,
+				A4DB7F8B210FE76F0070E725 /* libTKBO.7.2.0.dylib in Frameworks */,
+				A4DB7F8C210FE76F0070E725 /* libTKBinL.7.2.0.dylib in Frameworks */,
+				A4DB7F8D210FE76F0070E725 /* libTKernel.7.2.0.dylib in Frameworks */,
+				A4DB7F8E210FE76F0070E725 /* libTKBRep.7.2.0.dylib in Frameworks */,
+				A4DB7F8F210FE76F0070E725 /* libTKDraw.7.2.0.dylib in Frameworks */,
+				A4DB7F90210FE76F0070E725 /* libTKXmlTObj.7.2.0.dylib in Frameworks */,
+				A4DB7F91210FE76F0070E725 /* libTKGeomBase.7.2.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A42E7B3F210FDFA0003D1E26 = {
+			isa = PBXGroup;
+			children = (
+				A42E7B4A210FDFA0003D1E26 /* AppTest1 */,
+				A42E7B49210FDFA0003D1E26 /* Products */,
+				A4DB7F21210FE76A0070E725 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A42E7B49210FDFA0003D1E26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A42E7B48210FDFA0003D1E26 /* AppTest1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A42E7B4A210FDFA0003D1E26 /* AppTest1 */ = {
+			isa = PBXGroup;
+			children = (
+				A42E7B4B210FDFA0003D1E26 /* AppDelegate.swift */,
+				A42E7B4D210FDFA0003D1E26 /* ViewController.swift */,
+				A4DB7F16210FE18A0070E725 /* ContainerViewController.swift */,
+				A4B672C72117CFBD008E7DE7 /* UpdatedWindowController.swift */,
+				A4DB7F1A210FE6C30070E725 /* OCC.h */,
+				A4DB7F1C210FE6D40070E725 /* OCC.mm */,
+				A49FD2382114C05F00D3702E /* ductIGSFile.h */,
+				A4DB7F942114A1AA0070E725 /* NSViewGradient.swift */,
+				A4DB7F962114A7040070E725 /* Constants.swift */,
+				A4DB7F9221127F580070E725 /* importantData.swift */,
+				A4DB7F17210FE18A0070E725 /* ContainerViewController.xib */,
+				A42E7B4F210FDFA0003D1E26 /* Assets.xcassets */,
+				A42E7B51210FDFA0003D1E26 /* Main.storyboard */,
+				A42E7B54210FDFA0003D1E26 /* Info.plist */,
+				A42E7B55210FDFA0003D1E26 /* AppTest1.entitlements */,
+				A4DB7F1B210FE6D30070E725 /* AppTest1-Bridging-Header.h */,
+				A4DB7F20210FE74E0070E725 /* OpenCascade_Include.h */,
+				A49FD2362114B63500D3702E /* duct.IGS */,
+				A4B672C62114C590008E7DE7 /* duct.txt */,
+				A4DB7F1E210FE72E0070E725 /* 7.2.0 */,
+			);
+			path = AppTest1;
+			sourceTree = "<group>";
+		};
+		A4DB7F21210FE76A0070E725 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A49FD2342114B17700D3702E /* zoom-out-symbol.png */,
+				A4DB7F3F210FE76D0070E725 /* libTKBin.7.2.0.dylib */,
+				A4DB7F54210FE76E0070E725 /* libTKBinL.7.2.0.dylib */,
+				A4DB7F27210FE76B0070E725 /* libTKBinTObj.7.2.0.dylib */,
+				A4DB7F29210FE76B0070E725 /* libTKBinXCAF.7.2.0.dylib */,
+				A4DB7F53210FE76E0070E725 /* libTKBO.7.2.0.dylib */,
+				A4DB7F24210FE76B0070E725 /* libTKBool.7.2.0.dylib */,
+				A4DB7F56210FE76F0070E725 /* libTKBRep.7.2.0.dylib */,
+				A4DB7F25210FE76B0070E725 /* libTKCAF.7.2.0.dylib */,
+				A4DB7F2B210FE76C0070E725 /* libTKCDF.7.2.0.dylib */,
+				A4DB7F4A210FE76E0070E725 /* libTKDCAF.7.2.0.dylib */,
+				A4DB7F57210FE76F0070E725 /* libTKDraw.7.2.0.dylib */,
+				A4DB7F55210FE76E0070E725 /* libTKernel.7.2.0.dylib */,
+				A4DB7F23210FE76B0070E725 /* libTKFeat.7.2.0.dylib */,
+				A4DB7F4F210FE76E0070E725 /* libTKFillet.7.2.0.dylib */,
+				A4DB7F30210FE76C0070E725 /* libTKG2d.7.2.0.dylib */,
+				A4DB7F26210FE76B0070E725 /* libTKG3d.7.2.0.dylib */,
+				A4DB7F31210FE76C0070E725 /* libTKGeomAlgo.7.2.0.dylib */,
+				A4DB7F59210FE76F0070E725 /* libTKGeomBase.7.2.0.dylib */,
+				A4DB7F4D210FE76E0070E725 /* libTKHLR.7.2.0.dylib */,
+				A4DB7F3A210FE76D0070E725 /* libTKIGES.7.2.0.dylib */,
+				A4DB7F2F210FE76C0070E725 /* libTKLCAF.7.2.0.dylib */,
+				A4DB7F47210FE76D0070E725 /* libTKMath.7.2.0.dylib */,
+				A4DB7F37210FE76C0070E725 /* libTKMesh.7.2.0.dylib */,
+				A4DB7F42210FE76D0070E725 /* libTKMeshVS.7.2.0.dylib */,
+				A4DB7F32210FE76C0070E725 /* libTKOffset.7.2.0.dylib */,
+				A4DB7F28210FE76B0070E725 /* libTKOpenGl.7.2.0.dylib */,
+				A4DB7F3E210FE76D0070E725 /* libTKPrim.7.2.0.dylib */,
+				A4DB7F2E210FE76C0070E725 /* libTKQADraw.7.2.0.dylib */,
+				A4DB7F40210FE76D0070E725 /* libTKService.7.2.0.dylib */,
+				A4DB7F41210FE76D0070E725 /* libTKShHealing.7.2.0.dylib */,
+				A4DB7F4C210FE76E0070E725 /* libTKStd.7.2.0.dylib */,
+				A4DB7F43210FE76D0070E725 /* libTKStdL.7.2.0.dylib */,
+				A4DB7F4E210FE76E0070E725 /* libTKSTEP.7.2.0.dylib */,
+				A4DB7F3C210FE76D0070E725 /* libTKSTEP209.7.2.0.dylib */,
+				A4DB7F2A210FE76C0070E725 /* libTKSTEPAttr.7.2.0.dylib */,
+				A4DB7F46210FE76D0070E725 /* libTKSTEPBase.7.2.0.dylib */,
+				A4DB7F36210FE76C0070E725 /* libTKSTL.7.2.0.dylib */,
+				A4DB7F2C210FE76C0070E725 /* libTKTObj.7.2.0.dylib */,
+				A4DB7F38210FE76C0070E725 /* libTKTObjDRAW.7.2.0.dylib */,
+				A4DB7F49210FE76E0070E725 /* libTKTopAlgo.7.2.0.dylib */,
+				A4DB7F45210FE76D0070E725 /* libTKTopTest.7.2.0.dylib */,
+				A4DB7F50210FE76E0070E725 /* libTKV3d.7.2.0.dylib */,
+				A4DB7F2D210FE76C0070E725 /* libTKVCAF.7.2.0.dylib */,
+				A4DB7F35210FE76C0070E725 /* libTKViewerTest.7.2.0.dylib */,
+				A4DB7F33210FE76C0070E725 /* libTKVRML.7.2.0.dylib */,
+				A4DB7F51210FE76E0070E725 /* libTKXCAF.7.2.0.dylib */,
+				A4DB7F3D210FE76D0070E725 /* libTKXDEDRAW.7.2.0.dylib */,
+				A4DB7F44210FE76D0070E725 /* libTKXDEIGES.7.2.0.dylib */,
+				A4DB7F3B210FE76D0070E725 /* libTKXDESTEP.7.2.0.dylib */,
+				A4DB7F22210FE76B0070E725 /* libTKXMesh.7.2.0.dylib */,
+				A4DB7F52210FE76E0070E725 /* libTKXml.7.2.0.dylib */,
+				A4DB7F34210FE76C0070E725 /* libTKXmlL.7.2.0.dylib */,
+				A4DB7F58210FE76F0070E725 /* libTKXmlTObj.7.2.0.dylib */,
+				A4DB7F39210FE76D0070E725 /* libTKXmlXCAF.7.2.0.dylib */,
+				A4DB7F4B210FE76E0070E725 /* libTKXSBase.7.2.0.dylib */,
+				A4DB7F48210FE76E0070E725 /* libTKXSDRAW.7.2.0.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A42E7B47210FDFA0003D1E26 /* AppTest1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42E7B58210FDFA0003D1E26 /* Build configuration list for PBXNativeTarget "AppTest1" */;
+			buildPhases = (
+				A42E7B44210FDFA0003D1E26 /* Sources */,
+				A42E7B45210FDFA0003D1E26 /* Frameworks */,
+				A42E7B46210FDFA0003D1E26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppTest1;
+			productName = AppTest1;
+			productReference = A42E7B48210FDFA0003D1E26 /* AppTest1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A42E7B40210FDFA0003D1E26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Lucas Calvert";
+				TargetAttributes = {
+					A42E7B47210FDFA0003D1E26 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+				};
+			};
+			buildConfigurationList = A42E7B43210FDFA0003D1E26 /* Build configuration list for PBXProject "AppTest1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A42E7B3F210FDFA0003D1E26;
+			productRefGroup = A42E7B49210FDFA0003D1E26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A42E7B47210FDFA0003D1E26 /* AppTest1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A42E7B46210FDFA0003D1E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42E7B50210FDFA0003D1E26 /* Assets.xcassets in Resources */,
+				A49FD2372114B63600D3702E /* duct.IGS in Resources */,
+				A49FD2352114B17700D3702E /* zoom-out-symbol.png in Resources */,
+				A42E7B53210FDFA0003D1E26 /* Main.storyboard in Resources */,
+				A4DB7F1F210FE72E0070E725 /* 7.2.0 in Resources */,
+				A4DB7F19210FE18A0070E725 /* ContainerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A42E7B44210FDFA0003D1E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42E7B4E210FDFA0003D1E26 /* ViewController.swift in Sources */,
+				A4DB7F1D210FE6D40070E725 /* OCC.mm in Sources */,
+				A4DB7F18210FE18A0070E725 /* ContainerViewController.swift in Sources */,
+				A4B672C82117CFBD008E7DE7 /* UpdatedWindowController.swift in Sources */,
+				A4DB7F9321127F580070E725 /* importantData.swift in Sources */,
+				A4DB7F972114A7040070E725 /* Constants.swift in Sources */,
+				A42E7B4C210FDFA0003D1E26 /* AppDelegate.swift in Sources */,
+				A4DB7F952114A1AA0070E725 /* NSViewGradient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A42E7B51210FDFA0003D1E26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A42E7B52210FDFA0003D1E26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A42E7B56210FDFA0003D1E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A42E7B57210FDFA0003D1E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A42E7B59210FDFA0003D1E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AppTest1/AppTest1.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppTest1/7.2.0/include/opencascade",
+				);
+				INFOPLIST_FILE = AppTest1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppTest1/7.2.0/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CMGLab.AppTest1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppTest1/AppTest1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		A42E7B5A210FDFA0003D1E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AppTest1/AppTest1.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppTest1/7.2.0/include/opencascade",
+				);
+				INFOPLIST_FILE = AppTest1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppTest1/7.2.0/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CMGLab.AppTest1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppTest1/AppTest1-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A42E7B43210FDFA0003D1E26 /* Build configuration list for PBXProject "AppTest1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42E7B56210FDFA0003D1E26 /* Debug */,
+				A42E7B57210FDFA0003D1E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A42E7B58210FDFA0003D1E26 /* Build configuration list for PBXNativeTarget "AppTest1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42E7B59210FDFA0003D1E26 /* Debug */,
+				A42E7B5A210FDFA0003D1E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A42E7B40210FDFA0003D1E26 /* Project object */;
+}
