@@ -10,7 +10,6 @@ import Foundation
 import AppKit
 
 struct Colors{
-    
 
     static let brightOrange = CGColor(red: 255.0/255.0, green: 69.0/255.0, blue: 0.0/255.0, alpha: 1.0);
     static let red = CGColor(red: 255.0/255.0, green: 115.0/255.0, blue: 115.0/255.0, alpha: 1.0);
@@ -23,4 +22,5 @@ struct Colors{
     static let black = CGColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0);
     static let white = CGColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0);
     static let veryLightGrey = CGColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0);
+    static let lightBlue = CGColor(red: 183/255.0, green: 234.0/255.0, blue: 245/255.0, alpha: 1.0);
 };

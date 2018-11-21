@@ -45,7 +45,8 @@ class ContainerViewController: NSViewController, NSWindowDelegate {
             
             //Get mouse coordinates
             print("Mouse Event: \(event.locationInWindow.x)  \(event.locationInWindow.y)")
-            importantData.shared.theWrapper.selectPoint(Int32(event.locationInWindow.x) - 10, 480 - (Int32(event.locationInWindow.y) )) //subtract y from window size
+           // importantData.shared.theWrapper.selectPoint(Int32(event.locationInWindow.x) - 10, 480 - (Int32(event.locationInWindow.y) )) //subtract y from window size
+            importantData.shared.theWrapper.selectPoint(Int32(event.locationInWindow.x), Int32(event.window!.frame.height) - 23 -  (Int32(event.locationInWindow.y)))
             
     
             
@@ -87,6 +88,7 @@ class ContainerViewController: NSViewController, NSWindowDelegate {
             //if zoom<10{
             importantData.shared.theWrapper.zoom(Float32(zoom/300 + 1));
             //};
+            importantData.shared.zoomTotal = importantData.shared.zoomTotal * Float32(zoom/300 + 1);
         };
     };
     

@@ -47,7 +47,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/lucascalvert/Documents/CU Boulder/CMGLab/SWIFT Practice/AppTest1/AppTest1"
+      customWorkingDirectory = "/Users/lucascalvert/Documents/Git/CripsyCAD/AppTest1/AppTest1"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"

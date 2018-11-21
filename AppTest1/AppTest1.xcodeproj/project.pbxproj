@@ -13,6 +13,9 @@
 		A42E7B53210FDFA0003D1E26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42E7B51210FDFA0003D1E26 /* Main.storyboard */; };
 		A49FD2352114B17700D3702E /* zoom-out-symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = A49FD2342114B17700D3702E /* zoom-out-symbol.png */; };
 		A49FD2372114B63600D3702E /* duct.IGS in Resources */ = {isa = PBXBuildFile; fileRef = A49FD2362114B63500D3702E /* duct.IGS */; };
+		A4A30D902130815800228965 /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A30D8F2130815800228965 /* HelpVC.swift */; };
+		A4A30D922130939800228965 /* plusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A30D912130939800228965 /* plusButton.swift */; };
+		A4A30D952130C32700228965 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A30D942130C32700228965 /* MenuButton.swift */; };
 		A4B672C82117CFBD008E7DE7 /* UpdatedWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B672C72117CFBD008E7DE7 /* UpdatedWindowController.swift */; };
 		A4DB7F18210FE18A0070E725 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB7F16210FE18A0070E725 /* ContainerViewController.swift */; };
 		A4DB7F19210FE18A0070E725 /* ContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4DB7F17210FE18A0070E725 /* ContainerViewController.xib */; };
@@ -76,7 +79,8 @@
 		A4DB7F91210FE76F0070E725 /* libTKGeomBase.7.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F59210FE76F0070E725 /* libTKGeomBase.7.2.0.dylib */; };
 		A4DB7F9321127F580070E725 /* importantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB7F9221127F580070E725 /* importantData.swift */; };
 		A4DB7F952114A1AA0070E725 /* NSViewGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB7F942114A1AA0070E725 /* NSViewGradient.swift */; };
-		A4DB7F972114A7040070E725 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB7F962114A7040070E725 /* Constants.swift */; };
+		A4DB7F972114A7040070E725 /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB7F962114A7040070E725 /* colors.swift */; };
+		A4E6ADBD2141C37F00126320 /* DragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E6ADBC2141C37F00126320 /* DragView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +94,9 @@
 		A49FD2342114B17700D3702E /* zoom-out-symbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zoom-out-symbol.png"; sourceTree = "<group>"; };
 		A49FD2362114B63500D3702E /* duct.IGS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = duct.IGS; sourceTree = "<group>"; };
 		A49FD2382114C05F00D3702E /* ductIGSFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ductIGSFile.h; sourceTree = "<group>"; };
+		A4A30D8F2130815800228965 /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
+		A4A30D912130939800228965 /* plusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plusButton.swift; sourceTree = "<group>"; };
+		A4A30D942130C32700228965 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		A4B672C62114C590008E7DE7 /* duct.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = duct.txt; sourceTree = "<group>"; };
 		A4B672C72117CFBD008E7DE7 /* UpdatedWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatedWindowController.swift; sourceTree = "<group>"; };
 		A4DB7F16210FE18A0070E725 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
@@ -157,7 +164,8 @@
 		A4DB7F59210FE76F0070E725 /* libTKGeomBase.7.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTKGeomBase.7.2.0.dylib; path = AppTest1/7.2.0/lib/libTKGeomBase.7.2.0.dylib; sourceTree = "<group>"; };
 		A4DB7F9221127F580070E725 /* importantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = importantData.swift; sourceTree = "<group>"; };
 		A4DB7F942114A1AA0070E725 /* NSViewGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSViewGradient.swift; sourceTree = "<group>"; };
-		A4DB7F962114A7040070E725 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A4DB7F962114A7040070E725 /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
+		A4E6ADBC2141C37F00126320 /* DragView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,28 +255,29 @@
 		A42E7B4A210FDFA0003D1E26 /* AppTest1 */ = {
 			isa = PBXGroup;
 			children = (
-				A42E7B4B210FDFA0003D1E26 /* AppDelegate.swift */,
-				A42E7B4D210FDFA0003D1E26 /* ViewController.swift */,
-				A4DB7F16210FE18A0070E725 /* ContainerViewController.swift */,
-				A4B672C72117CFBD008E7DE7 /* UpdatedWindowController.swift */,
-				A4DB7F1A210FE6C30070E725 /* OCC.h */,
-				A4DB7F1C210FE6D40070E725 /* OCC.mm */,
-				A49FD2382114C05F00D3702E /* ductIGSFile.h */,
-				A4DB7F942114A1AA0070E725 /* NSViewGradient.swift */,
-				A4DB7F962114A7040070E725 /* Constants.swift */,
-				A4DB7F9221127F580070E725 /* importantData.swift */,
-				A4DB7F17210FE18A0070E725 /* ContainerViewController.xib */,
+				A4E6ADC12141C56F00126320 /* Miscellaneous */,
+				A4E6ADC02141C54100126320 /* Files */,
+				A4E6ADBF2141C3A100126320 /* OpenCascade Integration */,
+				A4E6ADBE2141C38500126320 /* View Controllers */,
+				A4A30D932130A10A00228965 /* User Interface Elements */,
 				A42E7B4F210FDFA0003D1E26 /* Assets.xcassets */,
 				A42E7B51210FDFA0003D1E26 /* Main.storyboard */,
 				A42E7B54210FDFA0003D1E26 /* Info.plist */,
 				A42E7B55210FDFA0003D1E26 /* AppTest1.entitlements */,
-				A4DB7F1B210FE6D30070E725 /* AppTest1-Bridging-Header.h */,
-				A4DB7F20210FE74E0070E725 /* OpenCascade_Include.h */,
-				A49FD2362114B63500D3702E /* duct.IGS */,
-				A4B672C62114C590008E7DE7 /* duct.txt */,
 				A4DB7F1E210FE72E0070E725 /* 7.2.0 */,
 			);
 			path = AppTest1;
+			sourceTree = "<group>";
+		};
+		A4A30D932130A10A00228965 /* User Interface Elements */ = {
+			isa = PBXGroup;
+			children = (
+				A4DB7F962114A7040070E725 /* colors.swift */,
+				A4A30D912130939800228965 /* plusButton.swift */,
+				A4A30D942130C32700228965 /* MenuButton.swift */,
+				A4DB7F942114A1AA0070E725 /* NSViewGradient.swift */,
+			);
+			path = "User Interface Elements";
 			sourceTree = "<group>";
 		};
 		A4DB7F21210FE76A0070E725 /* Frameworks */ = {
@@ -333,6 +342,49 @@
 				A4DB7F48210FE76E0070E725 /* libTKXSDRAW.7.2.0.dylib */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4E6ADBE2141C38500126320 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4DB7F17210FE18A0070E725 /* ContainerViewController.xib */,
+				A4A30D8F2130815800228965 /* HelpVC.swift */,
+				A4DB7F16210FE18A0070E725 /* ContainerViewController.swift */,
+				A4B672C72117CFBD008E7DE7 /* UpdatedWindowController.swift */,
+				A42E7B4D210FDFA0003D1E26 /* ViewController.swift */,
+				A4E6ADBC2141C37F00126320 /* DragView.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A4E6ADBF2141C3A100126320 /* OpenCascade Integration */ = {
+			isa = PBXGroup;
+			children = (
+				A4DB7F1A210FE6C30070E725 /* OCC.h */,
+				A4DB7F1C210FE6D40070E725 /* OCC.mm */,
+				A4DB7F20210FE74E0070E725 /* OpenCascade_Include.h */,
+				A4DB7F1B210FE6D30070E725 /* AppTest1-Bridging-Header.h */,
+			);
+			path = "OpenCascade Integration";
+			sourceTree = "<group>";
+		};
+		A4E6ADC02141C54100126320 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				A49FD2362114B63500D3702E /* duct.IGS */,
+				A4B672C62114C590008E7DE7 /* duct.txt */,
+				A49FD2382114C05F00D3702E /* ductIGSFile.h */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		A4E6ADC12141C56F00126320 /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				A42E7B4B210FDFA0003D1E26 /* AppDelegate.swift */,
+				A4DB7F9221127F580070E725 /* importantData.swift */,
+			);
+			path = Miscellaneous;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,10 +464,14 @@
 			files = (
 				A42E7B4E210FDFA0003D1E26 /* ViewController.swift in Sources */,
 				A4DB7F1D210FE6D40070E725 /* OCC.mm in Sources */,
+				A4E6ADBD2141C37F00126320 /* DragView.swift in Sources */,
 				A4DB7F18210FE18A0070E725 /* ContainerViewController.swift in Sources */,
+				A4A30D922130939800228965 /* plusButton.swift in Sources */,
 				A4B672C82117CFBD008E7DE7 /* UpdatedWindowController.swift in Sources */,
 				A4DB7F9321127F580070E725 /* importantData.swift in Sources */,
-				A4DB7F972114A7040070E725 /* Constants.swift in Sources */,
+				A4A30D952130C32700228965 /* MenuButton.swift in Sources */,
+				A4DB7F972114A7040070E725 /* colors.swift in Sources */,
+				A4A30D902130815800228965 /* HelpVC.swift in Sources */,
 				A42E7B4C210FDFA0003D1E26 /* AppDelegate.swift in Sources */,
 				A4DB7F952114A1AA0070E725 /* NSViewGradient.swift in Sources */,
 			);
@@ -571,7 +627,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CMGLab.AppTest1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "AppTest1/AppTest1-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/lucascalvert/Documents/Git/CripsyCAD/AppTest1/AppTest1/OpenCascade Integration/AppTest1-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
@@ -600,7 +656,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CMGLab.AppTest1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "AppTest1/AppTest1-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/lucascalvert/Documents/Git/CripsyCAD/AppTest1/AppTest1/OpenCascade Integration/AppTest1-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
