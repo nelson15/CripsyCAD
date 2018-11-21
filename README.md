@@ -1,6 +1,6 @@
 # CrispyCAD
 
- **Creators: ** Lucas Calvert, Corey Nelson
+ **Creators:** Lucas Calvert, Corey Nelson
 
 ### Usage
 Open the Xcode Project in Xcode, click the "Run" button
