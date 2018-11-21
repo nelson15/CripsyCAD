@@ -8,6 +8,7 @@
 
 import Cocoa
 
+<<<<<<< HEAD
 class DragView: NSView{
     
     override func draggingEntered(_ sender: NSDraggingInfo) -> NSDragOperation {
@@ -25,4 +26,14 @@ class DragView: NSView{
     
     
     
+=======
+class DragView: NSView {
+
+    override func draw(_ dirtyRect: NSRect) {
+        super.draw(dirtyRect)
+
+        // Drawing code here.
+    }
+    
+>>>>>>> f568e840c11f875289ad89a43c1546b8d03fc0a5
 }

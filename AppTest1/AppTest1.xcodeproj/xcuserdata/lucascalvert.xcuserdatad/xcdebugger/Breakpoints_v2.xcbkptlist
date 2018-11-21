@@ -208,6 +208,25 @@
             startingLineNumber = "98"
             endingLineNumber = "98"
             landmarkName = "-make_donut"
+<<<<<<< HEAD
+=======
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppTest1/View Controllers/ViewController.swift"
+            timestampString = "559690520.109091"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
+            landmarkName = "viewWillAppear()"
+>>>>>>> f568e840c11f875289ad89a43c1546b8d03fc0a5
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
