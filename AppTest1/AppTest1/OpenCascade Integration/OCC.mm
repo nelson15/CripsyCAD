@@ -14,6 +14,7 @@
 #include "ductIGSFile.h"
 #include <string>
 
+// OCCController DEFINITION - include all "tracked variables"
 struct OCCController{
     NSView * myView;
     NSWindow * window;
@@ -28,12 +29,12 @@ struct OCCController{
     Handle(AIS_Shape) anAISShape;
     Handle(AIS_InteractiveObject) anObject;
     //Handle(AIS_InteractiveObject) anObject;
-   // Handle(SelectMgr_SelectableObject) mgr_Object;
+    // Handle(SelectMgr_SelectableObject) mgr_Object;
 };
 
 @implementation OCCWrapper
 
-//Initialzer
+//INITIALIZER
 -(instancetype) initWithView: (NSView *) myView{
     if(self = [super init]){
         ctrl = new OCCController;
@@ -54,9 +55,11 @@ struct OCCController{
     //////////////////////////////////////////////////////////////////////////
     // creating the Viewer
     ctrl->aViewer = new V3d_Viewer (ctrl->aGraphicDriver);
-    ctrl->aViewer->SetDefaultBackgroundColor(Quantity_NOC_BLACK);
+    //ctrl->aViewer->SetDefaultBackgroundColor(Quantity_NOC_BLACK);
+    ctrl->aViewer->SetDefaultBackgroundColor(Quantity_NOC_GRAY86);
     ctrl->aViewer->SetDefaultLights();
-    ctrl->aViewer->SetLightOn();
+    //ctrl->aViewer->SetLightOn();
+    //ctrl->aViewer->SetLightOn (new V3d_AmbientLight (ctrl->aViewer, Quantity_NOC_RED));
     cout << "V3d_Viewer created" << endl;
     
     ctrl->aCocoaWindow = new Cocoa_Window(ctrl->myView);
@@ -86,7 +89,13 @@ struct OCCController{
     //set the interactive object
     //ctrl->anObject =  new AIS_InteractiveObject;
     //ctrl->mgr_Object = new SelectMgr_SelectableObject;
-    
+    //ctrl->aView->SetAt(-1, 1, -1);
+    //SELECTION
+    ctrl->aContext->OpenLocalContext(Standard_True,Standard_True);
+    ctrl->aContext->Display(ctrl->anAISShape,AIS_Shaded,0,Standard_True,Standard_True);
+    //ctrl->aContext->ActivateStandardMode(TopAbs_FACE);
+    ctrl->aContext->ActivateStandardMode(TopAbs_FACE);
+ 
 };
 
 
@@ -114,8 +123,14 @@ struct OCCController{
     ctrl->aViewer = new V3d_Viewer (ctrl->aGraphicDriver);
     ctrl->aViewer->SetDefaultBackgroundColor(Quantity_NOC_BLACK);
     ctrl->aViewer->SetDefaultLights();
-    ctrl->aViewer->SetLightOn();
-
+    
+    //ctrl->aViewer->SetLightOn();
+   // Handle(V3d_DirectionalLight) light1 = new V3d_Light;
+    //light1->SetType(V3d_DIRECTIONAL);
+   // std::cout<<ambL->Intensity()<<std::endl;
+   // ambL->SetIntensity(100000);
+   // ctrl->aViewer->SetLightOn(ambL);
+    
     cout << "V3d_Viewer created" << endl;
     
     ctrl->aCocoaWindow = new Cocoa_Window(ctrl->myView);
@@ -144,10 +159,14 @@ struct OCCController{
     
     //ctrl->aContext->InitSelected();
 
+    //SELECTION
     ctrl->aContext->OpenLocalContext(Standard_True,Standard_True);
-    ctrl->aContext->Display(ctrl->anAISShape,AIS_Shaded,0,Standard_True,Standard_True);
-    //ctrl->aContext->ActivateStandardMode(TopAbs_FACE);
-    ctrl->aContext->ActivateStandardMode(TopAbs_EDGE);
+   // ctrl->aContext->Display(ctrl->anAISShape,AIS_Shaded,0,Standard_True,Standard_True);
+     ctrl->aContext->Display(ctrl->anAISShape,AIS_Shaded,0,Standard_True,Standard_True);
+    //ctrl->aContext->Display(ctrl->anObject, Standard_True);
+    ctrl->aContext->ActivateStandardMode(TopAbs_FACE);
+    
+
 };
 
 
@@ -214,14 +233,29 @@ struct OCCController{
 //SELECTION
 
 -(void) selectPoint: (int) xPix : (int) yPix{
-    
 
-    
     ctrl->aContext->MoveTo(xPix, yPix, ctrl->aView, 1);
     std::cout<<xPix<<"  "<<yPix<<std::endl;
     
-    Handle_AIS_InteractiveObject hObj = ctrl->aContext->DetectedInteractive();
+    Handle(AIS_InteractiveObject) hObj = ctrl->aContext->DetectedInteractive();
 }
+
+
+-(void) setSelectionMethod: (int) option{
+    
+    //deactivate all selection modes, then re-activate the desired mode
+    ctrl->aContext->Deactivate();
+    std::cout<<option<<std::endl;
+    if (option == 0){
+        ctrl->aContext->ActivateStandardMode(TopAbs_FACE);
+        //std::cout<<"Face Mode Activated"<<std::endl;
+    } else if (option == 1){
+        ctrl->aContext->ActivateStandardMode(TopAbs_EDGE);
+    } else if (option == 2){
+        ctrl->aContext->ActivateStandardMode(TopAbs_VERTEX);
+    };
+    
+};
 
 
 ////////////////////////////
@@ -244,8 +278,59 @@ struct OCCController{
     
 };
 
+
+
+
 ////////////////////////////
 
+
+
+///////////////////////
+// VIEW SNAPPING
+
+
+-(void) snapToInlet: (int) x : (int) y : (int) z : (float) zoom{
+  
+    //Find difference bewtween current view angles and desired values
+    int diffX = (9 - x);
+    int diffY = (152 - y);
+    int diffZ = (352 - z);
+    
+    //Rotate by difference
+    //ctrl->aView->Rotate(0,0,(diffZ*3.14/180)); // z
+    //ctrl->aView->Rotate(0,(diffY*3.14/180),0); // y
+    //ctrl->aView->Rotate((diffX*3.14/180),0,0); // x
+    
+    ////// WORKS
+    ctrl->aView->SetEye(0,0,10000);
+    //ctrl->aView->Rotate(0,0,-90*3.14/180); // z
+    ctrl->aView->SetTwist(270*3.14/180);
+   
+    ctrl->aView->SetZoom(zoom);
+    ctrl->aView->Pan(-250,0);
+    
+    Handle(V3d_AmbientLight) ambL = new V3d_AmbientLight(ctrl->aViewer, Quantity_NOC_LIGHTBLUE3);
+    ambL->SetIntensity(100);
+    ctrl->aViewer->SetLightOn(ambL);
+    
+    
+    ctrl->aView->Redraw();
+    
+    std::cout<<"New X = "<< x+diffX <<std::endl;
+    std::cout<<"New Y = "<< y+diffY <<std::endl;
+    std::cout<<"New Z = "<< z+diffZ <<std::endl;
+    
+    
+};
+
+
+///////////////////////
+
+
+
+
+////////////////////////
+// OTHER STUFF
 -(void) dealloc{
     delete ctrl;
 };
@@ -260,7 +345,7 @@ struct OCCController{
 }
 
 
-
+//////////////////////////
 @end
 
 

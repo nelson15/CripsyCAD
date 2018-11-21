@@ -10,7 +10,7 @@ import Foundation
 import Cocoa
 
 
-class UpdatedWindowController: NSWindow {
+class UpdatedWindow: NSWindow, NSWindowDelegate {
     
     var oPressed: Bool = false;
     
@@ -24,6 +24,10 @@ class UpdatedWindowController: NSWindow {
         if event.keyCode == 31{
             oPressed = false;
         }
+    }
+    
+     func windowDidResize(_ notification: Notification) {
+        importantData.shared.theWrapper.redraw();
     }
     
     

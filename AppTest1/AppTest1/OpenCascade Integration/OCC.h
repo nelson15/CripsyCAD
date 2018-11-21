@@ -44,9 +44,11 @@ struct OCCController;
 
 //Selection
 -(void) selectPoint: (int) xPix : (int) yPix;
+-(void) setSelectionMethod: (int) option;
 
 //Snapping View to Faces (by rotation)
 -(void) testButton;
+-(void) snapToInlet: (int) x : (int) y : (int) z : (float) zoom;
 
 -(void) writeToFile;
 
