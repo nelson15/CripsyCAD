@@ -58,7 +58,11 @@ class ViewController: NSViewController {
 
     // Using the drop down menu to make chose which object is being built
     @IBAction func ModelSelection(_ sender: Any) {
+<<<<<<< HEAD
+       // print((sender as AnyObject).indexOfSelectedItem);
+=======
         print((sender as AnyObject).indexOfSelectedItem);
+>>>>>>> f568e840c11f875289ad89a43c1546b8d03fc0a5
         if (sender as AnyObject).indexOfSelectedItem == 0{
             importantData.shared.theWrapper.makeFromFile();
             importantData.shared.theWrapper.redraw();
@@ -173,7 +177,17 @@ class ViewController: NSViewController {
 
     override func viewWillAppear() {
          //making the diffuser by default
+<<<<<<< HEAD
+        importantData.shared.theWrapper.makeFromFile();
+        
+        // fixing the initialization error - for some reason it initializes to the wrong location and the wrong zoom value... not sure whats wrong - did this when xcode/macOS updated
+        importantData.shared.theWrapper.pan(-250, -250);
+        importantData.shared.theWrapper.zoom(0.55);
+        
+        importantData.shared.theWrapper.redraw();
+=======
         importantData.shared.theWrapper.makeFromFile()
+>>>>>>> f568e840c11f875289ad89a43c1546b8d03fc0a5
         xSlider.isEnabled = true;
         ySlider.isEnabled = true;
         zSlider.isEnabled = true;

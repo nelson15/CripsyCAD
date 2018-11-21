@@ -208,6 +208,8 @@
             startingLineNumber = "98"
             endingLineNumber = "98"
             landmarkName = "-make_donut"
+<<<<<<< HEAD
+=======
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -224,6 +226,7 @@
             startingLineNumber = "176"
             endingLineNumber = "176"
             landmarkName = "viewWillAppear()"
+>>>>>>> f568e840c11f875289ad89a43c1546b8d03fc0a5
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
